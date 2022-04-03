@@ -3,6 +3,7 @@ var options = function(){
 	var options_data = {
 		cards:2, dificulty:"hard"
 	};
+
 	var load = function(){
 		var json = localStorage.getItem("config","{'cards':2,'dificulty':'hard'}");
 		options_data = JSON.parse(json);
@@ -33,12 +34,13 @@ var options = function(){
 			discard: function(){
 				this.num = options_data.cards;
 				this.dificulty = options_data.dificulty;
+				loadpage("./index.html");
 			},
 			save: function(){
 				options_data.cards = this.num;
 				options_data.dificulty = this.dificulty;
 				save();
-				loadpage("../");
+				loadpage("./pi_3/index.html");
 			}
 		}
 	});
