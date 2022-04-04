@@ -5,7 +5,7 @@ var options = function(){
 	};
 
 	var load = function(){
-		var json = localStorage.getItem("config"); || '{"cards":2,"dificulty":"hard"}';
+		var json = localStorage.getItem("config") || '{"cards":2,"dificulty":"hard"}';
 		options_data = JSON.parse(json);
 	};
 	var save = function(){
