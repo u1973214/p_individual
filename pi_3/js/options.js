@@ -40,7 +40,7 @@ var options = function(){
 				options_data.cards = this.num;
 				options_data.dificulty = this.dificulty;
 				save();
-				loadpage("./pi_3/index.html");
+				loadpage("../index.html");
 			}
 		}
 	});
